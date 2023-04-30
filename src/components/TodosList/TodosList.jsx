@@ -1,9 +1,24 @@
 import React, { Component } from 'react';
 
 class TodosList extends Component {
-    state = {  } 
+  
+        state = {  } 
+
     render() { 
-        return (<h1>hello From TodosList</h1>);
+        let todos = this.props.todos;
+        let deleteTodo = this.props.deleteTodo;
+        return (
+            <div className="todos">
+            {todos.map(function(todoObj){
+                return (
+                    <div className="todo" key ={todoObj.id}>
+                        <div className="todoText" >{todoObj.todoName}</div>
+                        <button className="Delete" onClick={ (e)=>{ deleteTodo(todoObj.id) }}>Delete</button>
+                    </div>
+                )
+            })}
+            </div>
+        );
     }
 }
  

@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.App {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.todos {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 80vh;
+    width: 70vw;
+    margin: 25px;
+    padding: 20px;
+    margin-top: 47px;
+    border-radius: 10px;
+}
+
+.todo {
+    margin: 3px;
+    padding: 2px;
+    background: blueviolet;
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+}
+.todoText {
+    width: 80%;
+    min-height: 70%;
+    max-height: 90%;
+    text-align: start;
+    margin-left: 10px;
+    font-size: larger;
+    border-radius: 4px;
+    display: block;
+    padding: 2px;
+    background: border-box;
+    color: white;
+}
+
+.Delete {
+    height: 65%;
+    width: 80px;
+    border-radius: 6px;
+    border: white;
+    font-size: large;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+.inputText {
+    border: none;
+    height: 35%;
+    background: white;
+    width: 77%;
+    padding: 10px;
+    margin: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-bottom: solid 2px blueviolet;
+    outline: none;
+}
+
+.inputBox-container{
+    
+}
+.inputBox {
+    padding: 10px;
+    height: 15vh;
+    width: 70vw;
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid lightgray;
+    font-family: 'Poltawski Nowy', serif;
+}
+
+.AddTodo {
+    height: 35%;
+    width: 6%;
+    border: none;
+    color: white;
+    font-size: x-large;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 10px;
+    background: linear-gradient(19deg,blueviolet , transparent);
+}
